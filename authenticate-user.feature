@@ -6,10 +6,10 @@ Scenario: Preservation-User logs in with correct credentials
   Given Alice has an existing account with her identity provider 
     And Alice has the entitlement "preservation-user"
   
-  When Mary enters a URL for the Archivematica dashboard
+  When Alice enters a URL for the Archivematica dashboard
   
   Then the Identity Provider presents a login page
-    And Mary enters her user name <username> and password <password>
+    And Alice enters her user name <username> and password <password>
     And the Identity Provider presents an Information Release consent page
-    And Mary selects the option "Ask me again at next login" and clicks "accept"
-    And Mary is logged in with "preservation-user" privileges
+    And Alice selects the option "Ask me again at next login" and clicks "accept"
+    And Alice is logged in with "preservation-user" privileges
